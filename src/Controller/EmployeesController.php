@@ -22,7 +22,7 @@ class EmployeesController extends AbstractController
             ['id' => 8, 'name' => 'Carolina', 'email' => 'carolina@correo.com', 'age' => 18, 'city' => 'Málaga'],
           ]; 
 
-        return $this->render('employees/index_original.html.twig', [
+        return $this->render('employees/index.html.twig', [
             'controller_name' => 'EmployeesController',
             'myname' => $name,
             'employees' => $people

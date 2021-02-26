@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CursoController!{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1>Detalle del curso {{item.id}}</h1>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Level</th>
+                    <th>Language</th>
+                    <th>Nº Alumnos</th>
+                </tr>
+
+                <tr>
+                    <td>{{item.nombre}}</td>
+                    <td>{{item.nivel}}</td>
+                    <td>{{item.idioma}}</td>
+                    <td>{{item.alumnos|length}}</td>
+                </tr>
+
+            </table> 
+      
+</div>
+{% endblock %}
